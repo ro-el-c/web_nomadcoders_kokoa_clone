@@ -1,0 +1,39 @@
+#2 LEARNING HTML
+
+## <tag> 내용 </tag>
+
+- "tag 사이의 내용"이 무언가가 된다, ex. text, image, ...
+- html에는 오류가 없어서, 없는 tag를 써도 문제 X
+- but) 작성한 tag가 있다면, 브라우저가 알아들을 것.
+- 구문 작성 주의
+
+## attribute 속성
+
+- 불명확한 태그에 대한 부가 정보 ex. a 태그의 href 속성
+
+=> 구문 작성 주의. 태그 "띄고" 속성
+
+
+### tag&attribute (태그와 속성)
+1. 제목
+- h1 ~ h6
+
+2. 리스트
+- li : list item _ 리스트에 포함되는
+- ol : ordered list _ 순서 X
+- ul : unordered list _ 순서 O
+
+3. 링크
+- a : anchor(닻) _ = link _ 다른 웹사이트로 이동
+- href : HTTP/hyperlink reference _ 이동할 곳
+- target : 어느 탭에 열릴건지
+  -> default="_self" / 다른 탭="_blank"
+
+4. 이미지 
+: <img>닫는 태그가 없음 = sel-closing tag
+- img
+- src : img의 컨텐츠 _ 이미지 주소 또는 위치
+
+
+* MEMO
+Ctrl + D : 현재 커서 단어와 동일한 단어 동시에 수정

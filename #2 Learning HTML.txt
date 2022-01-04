@@ -1,15 +1,17 @@
 #2 LEARNING HTML
 
-## <tag> 내용 </tag>
+1) tags & attributes
 
+## <tag> 내용 </tag>
 - "tag 사이의 내용"이 무언가가 된다, ex. text, image, ...
 - html에는 오류가 없어서, 없는 tag를 써도 문제 X
 - but) 작성한 tag가 있다면, 브라우저가 알아들을 것.
 - 구문 작성 주의
 
-## attribute 속성
 
+## attribute 속성
 - 불명확한 태그에 대한 부가 정보 ex. a 태그의 href 속성
+
 
 => 구문 작성 주의. 태그 "띄고" 속성
 
@@ -32,8 +34,65 @@
 4. 이미지 
 : <img>닫는 태그가 없음 = sel-closing tag
 - img
-- src : img의 컨텐츠 _ 이미지 주소 또는 위치
+- src : img의 컨텐츠 _ 인터넷 상의 이미지 주소 or 로컬 이미지 상대경로, 절대경로 & 파일명.확장자명
+
+
+
+
+2) Head
+
+- 모든 html 문서는 <!DOCTYPE html>로 시작
+- <html> </html> 사이의 모든 텍스트가 html 코드
+  - lang : 웹사이트의 주된 언어 (검색 엔진에 도움 주기 위함)
+- 웹사이트 구조 -> 1. head 2. body
+
+
+1. head : 웹사이트의 환경 설정
+- 외부로 보여지지 않음
+- 페이지에 관한 설정 - ex. title = 페이지 이름(상단)
+
+- <meta> : 부가 정보
+  - title★, base, link, style, script => 여러 종류 데이터 표현
+  - name / content
+    -> name="description" ★ : 구글이 검색할 때 찾는 태그
+  - property = "og:image" : 카카오톡 등 sns에 링크 공유시 보여지는 이미지 (썸네일 느낌)
+    -> fb : 페이스북 / twitter : 트위터 / nate : 네이트온
+- <charset> ★ : 한글 등 문자 표시 가능
+  - utf-8 항상 넣을 것
+
+위 작업들) 사이트의 정보들을 최대한 명확하게 브라우저에게 알려주는 용도
+- 어떤 언어, 사이트의 description, title 등이 무엇인지
+
+
+2. body : 사용자가 볼 수 있는 content
+- 위에서 지금까지 배웠던 모든 태그/생성자가 내용이 됨
+
+
+
+
+3) more Tags
+"mdn" 사이트 이용 (한국어 제공)
+- <p> : paragraph _ 긴 텍스트
+- <pre>
+- <abbr> : abbreviation _ 마우스 올리면 설명 텍스트 띄움
+  - p 태그 안에 사용
+  - ex. 약어 -> 원래 글
+- <cite> : citation _ 기울임체
+- <code> : 글씨체가 code 같이
+- <mark> : 글자 배경색 노랑 _ 형광펜 효과
+- <strong> : 볼드체 _ 강조
+- <sup> : 아래 첨자
+- <sub> : 위 첨자 ex. 수식
+- <audio> : 소리
+  - src : audio link
+  - controls : 화면에 보이게 하려면 필요 (default : "enabled" == "true")
+- <dialog> : 텍스트가 네모 칸 안에
+
+등등..
+
+
 
 
 * MEMO
 Ctrl + D : 현재 커서 단어와 동일한 단어 동시에 수정
+mdn : html/css/js 검색할 때 붙이기

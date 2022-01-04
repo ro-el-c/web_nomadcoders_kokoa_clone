@@ -1,41 +1,19 @@
 #2 LEARNING HTML
 
+<tagname attrname="attrvalue"> text </tagname>
+
+
 1) tags & attributes
 
 ## <tag> 내용 </tag>
 - "tag 사이의 내용"이 무언가가 된다, ex. text, image, ...
 - html에는 오류가 없어서, 없는 tag를 써도 문제 X
 - but) 작성한 tag가 있다면, 브라우저가 알아들을 것.
-- 구문 작성 주의
+- 구문 작성 주의. 태그 "띄고" 속성
 
 
 ## attribute 속성
 - 불명확한 태그에 대한 부가 정보 ex. a 태그의 href 속성
-
-
-=> 구문 작성 주의. 태그 "띄고" 속성
-
-
-### tag&attribute (태그와 속성)
-1. 제목
-- h1 ~ h6
-
-2. 리스트
-- li : list item _ 리스트에 포함되는
-- ol : ordered list _ 순서 X
-- ul : unordered list _ 순서 O
-
-3. 링크
-- a : anchor(닻) _ = link _ 다른 웹사이트로 이동
-- href : HTTP/hyperlink reference _ 이동할 곳
-- target : 어느 탭에 열릴건지
-  -> default="_self" / 다른 탭="_blank"
-
-4. 이미지 
-: <img>닫는 태그가 없음 = sel-closing tag
-- img
-- src : img의 컨텐츠 _ 인터넷 상의 이미지 주소 or 로컬 이미지 상대경로, 절대경로 & 파일명.확장자명
-
 
 
 
@@ -69,9 +47,59 @@
 
 
 
+3) tag & attribute (태그와 속성)
+    => "MDN" 사이트 이용 (한국어 제공)
 
-3) more Tags
-"mdn" 사이트 이용 (한국어 제공)
+1. 제목
+- <h1> ~ <h6>
+
+2. 리스트
+- <li> : list item _ 리스트에 포함되는
+- <ol> : ordered list _ 순서 X
+- <ul> : unordered list _ 순서 O
+
+3. 링크
+- <a> : anchor(닻) _ = link _ 다른 웹사이트로 이동
+- href : HTTP/hyperlink reference _ 이동할 곳
+- target : 어느 탭에 열릴건지
+  -> default="_self" / 다른 탭="_blank"
+
+4. 이미지 
+: 닫는 태그가 없음 = sel-closing tag
+- <img>
+- src : img의 컨텐츠 _ 인터넷 상의 이미지 주소 or 로컬 이미지 상대경로, 절대경로 & 파일명.확장자명
+
+5. 폼
+: 정보 제출을 위한 대화형 컨트롤을 포함하는 문서 구획
+- <form>
+
+- input _ 입력 창
+  - type : 입력 받을 데이터의 종류
+    - colors
+    - password
+    - text
+    - file
+      - accept : 선택 가능한 파일 형식/디렉토리 지정
+    - submit : form 을 전송
+      - disabled : 버튼 누를 수 없음
+    + url, week, date, 등
+  - placeholder : 입력 창 이름
+  - id : label의 for=""과 함께
+    -> ★ 고유식별자 ★ id 값은 unique 해야하고, tag는 하나의 id만 가질 수 있음.
+- label : question 추가 -> check or not 
+  -> input과 함께 쓰임
+  - for="", <input>의 id=""
+    -> label 클릭 시 같은 id의 input 작동
+  - 공백 X
+
+- value : submit 버튼 이름 바꿀 수 있음
+- required : 검증 ex. 이 입력란을 작성하세요
+- minlength : " 최소 글자 수
+
+
+
+
++)
 - <p> : paragraph _ 긴 텍스트
 - <pre>
 - <abbr> : abbreviation _ 마우스 올리면 설명 텍스트 띄움
@@ -88,7 +116,11 @@
   - controls : 화면에 보이게 하려면 필요 (default : "enabled" == "true")
 - <dialog> : 텍스트가 네모 칸 안에
 
+
+
 등등..
+
+
 
 
 

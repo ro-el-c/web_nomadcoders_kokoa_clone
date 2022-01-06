@@ -1,0 +1,82 @@
+#3 LEARNING CSS
+
+## HTML과 CSS를 섞는 방법
+1. 같은 HTML 파일에 HTML과 CSS 코드 모두 작성
+   -> <head> 안에 <style>
+2. HTML, CSS 분리 (주로)
+   -> .css 파일 작성
+   -> link 태그로 파일 연결, rel(관계) 명시(rel="stylesheet")
+
+
+
+1) CSS가 하는 일
+: html 태그를 가리킴 (ex. 이 태그는 초록색이다.)
+
+* Cascading Style Sheet
+- cascading -> 위에 있는 코드부터 차례로 읽는다.
+
+-> 같은 태그를 가리키는 코드가 존재할 때, 마지막에 작성된 스타일이 적용된다
+
+
+
+2) Selector & Property
+
+selector {
+    property:value;
+}
+
+
+1. selector : 선택자 _ html 태그를 가리키는 일 자체
+
+- html에서 작성한 tag 또는 id 지정
+-> tag {} / #id {}
+
+2. property : 속성 (ex. 글씨체, 글씨 크기 등)
+
+- 중괄호 안에 작성
+- 속성이름:속성값;
+  -> 속성 이름 - 띄어쓰기, 밑줄, 슬래쉬 사용 X
+	-> 세미콜론(;) 으로 끝날 것
+
+
+
+
+3) Box - Block & Inline ★
+
+1. Block
+- 옆(같은 줄)에 다른 box가 오지 못 한다.
+- 높이와 너비가 있다.
+- inline으로 바꿀 수 있다.
+	-> display 속성
+- <div>, <p>, ...
+
+- 3가지 property
+  - margin, padding, border
+
+	1. margin : box의 border(경계) 바깥 공간
+	   -> top, bottom, left, right 모두 설정 가능
+		 -> 간단히 설정
+		    ex. margin: 20px 15px; 상하, 좌우 => top, bottom = 20px / left, right = 15px
+		    ex. margin: 20px 5px 12px 9px; top부터 시계방향 => top = 20px, right = 5, bottom = 12, left = 9
+
+			* Collapsing margins 현상 (위, 아래에서만 발생)
+				: 두 개 이상의 블록 요소의 상하 마진이 겹칠 때, margin이 하나로 취급되어 어느 한 쪽 값만 적용된다.
+
+
+	2. padding : box의 border(경계) 안쪽 공간
+		 -> 상하좌우 값 설정 가능
+
+
+	3. border : 
+
+
+
+2. Inline
+- 옆에 다른 box가 올 수 있다.
+- 높이와 너비가 없다.
+- block으로 바꿀 수 있다.
+	-> display 속성
+- <span>, <a>, <img>, ...
+
+
+=> 대부분의 box 들은 block

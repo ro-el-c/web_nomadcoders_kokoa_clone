@@ -6,3 +6,7 @@
    : 브라우저에게 웹사이트가 어떻게 보여야하는지 design
 3. JavaScript (뇌) -> programming language
    : 움직임. 동적 상호작용 interactivity
+
+
+* HTML (HyperText Markup Language)
+* CSS (Cascading Style Sheets)

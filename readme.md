@@ -10,8 +10,7 @@
 ***
 ## Language
 * html
-* css
-* javascript<br><br>
+* css<br><br>
 
 ***
 ## Site

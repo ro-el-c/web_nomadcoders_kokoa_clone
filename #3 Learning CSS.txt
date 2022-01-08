@@ -22,14 +22,14 @@
 2) Selector & Property
 
 selector {
-    property:value;
+    property: value;
 }
 
 
 1. selector : 선택자 _ html 태그를 가리키는 일 자체
 
-- html에서 작성한 tag 또는 id 지정
--> tag {} / #id {}
+- html에서 작성한 tag/id/class 지정
+-> tag {} / #id {} / .class {}
 
 2. property : 속성 (ex. 글씨체, 글씨 크기 등)
 
@@ -37,7 +37,6 @@ selector {
 - 속성이름:속성값;
   -> 속성 이름 - 띄어쓰기, 밑줄, 슬래쉬 사용 X
 	-> 세미콜론(;) 으로 끝날 것
-
 
 
 
@@ -64,19 +63,109 @@ selector {
 
 
 	2. padding : box의 border(경계) 안쪽 공간
-		 -> 상하좌우 값 설정 가능
+	   -> 상하좌우 값 설정 가능
 
 
-	3. border : 
-
+	3. border : box의 경계
+	   -> border: 두께 종류 색깔;
+	   -> block & inline 모두 적용
 
 
 2. Inline
 - 옆에 다른 box가 올 수 있다.
-- 높이와 너비가 없다.
+- 높이와 너비가 없다. (height, width X)
+  -> 위, 아래로 margin 가질 수 X ★
+  -> block으로 바꿔야 한다.
+  -> padding은 사방으로 가능
 - block으로 바꿀 수 있다.
 	-> display 속성
 - <span>, <a>, <img>, ...
 
 
 => 대부분의 box 들은 block
+
+
+
+4) Class
+: 요소를 가리키면서 겹쳐도 되는 방법 (여러 요소가 사용할 수 있음)
+
+.class {
+	property: value;
+}
+
+- 이름이 유일할 필요가 없다.
+- 한 번에 여러 요소들이 사용할 수 있다.
+- 한 요소가 여러 class를 가질 수 있다.
+-> 코드가 반복되는 것을 막을 수 있다. ★★
+
+
+++) vs id
+
+#id {
+	property: value;
+}
+
+- 이름이 유일해야 한다.
+- 한 번에 여러 요소들이 사용할 수 없다.
+- 한 요소가 하나의 id만 가진다.
+
+
+
+5) property 속성
+
+1. display
+
+- block <-> inline 설정 가능
+- inline-block : 한 줄에 위치하지만 block으로 인식
+  -> 높이와 너비, 위아래로 margin도 가질 수 있다.
+  -> but 잘 쓰지 않는다.
+     -> 요소 사이 빈공간이 있다.
+	 -> 정해진 형식이 없다.
+	 -> 반응형 디자인을 지원하지 않는다. (창 크기에 영향을 받음)
+
+
+
+2. flex
+
+- display: flex;
+- inline-block 문제점 보완
+- box를 유연하게 어느 곳이든 둘 수 있다.
+- 2차원 레이아웃에서 잘 작동한다.
+- rule
+  1. 부모 element에만 명시한다. (자식 element에는 아무것도 적지 X)
+  2. justify-content 는 주축(main axis) 에 적용
+  3. align-items 는 교차축(cross axis) 에 적용
+
+- justify-content : default => 수평
+  - default=flex-start _ 앞
+  - center _ 가운데
+  - flex-end _ 뒤
+  - space-evenly _ 빈 공간 같은 크기로 나누어 배치
+  - space-around, space-between, ...
+
+- align-items : 교차축에 적용
+  - 부모 element가 height을 가지고 있지 않으면, align-item을 설정해도 바뀌지 않는다.
+    -> 부모 element height 단위 vh(viewport height) 사용
+	   - 화면마다 다르게 적용(아이폰, 맥, 등)
+  - default=flex-start _ 위
+  - center _ 가운데
+  - flex-end _ 아래
+  - stretch _ box 늘림 (height가 고정되어 있으면 적용 안 됨)
+  - ...
+
+
+* main axis : 주축. default=수평 / cross axis : 교차축. default=수직
+
+- flex-direction 으로 주축, 교차축 바꿀 수 있음
+   - row(default, 수평)
+   - column -> 주축이 수직, 교차축이 수평
+   - column-reverse, ...
+
+- flex-wrap
+   - nowrap _ 모든 요소가 같은 줄에 있도록
+   - wrap _ 한 줄에 최대한 많이, 안 되면 다음 줄로
+
+
+
+* MEMO
+

@@ -24,6 +24,13 @@
                 margin-right: 5px;
                 margin-bottom: 10px;
                 
+                margin: 50px;
+                height: 1000vh;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                flex-wrap: wrap;
+                flex-direction: column;
             }
             
             h1 {
@@ -42,6 +49,15 @@
                 padding: 20px;
                 background-color:whitesmoke;
                 
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 20px;
+                display: inline-block;
+                position: relative;
+                background-color: wheat;
+                width: 100px;
+                height: 100px;
             }
             #first {
                 background-color:whitesmoke;
@@ -63,53 +79,64 @@
                 width: 50px;
                 height: 50px;
             }
+
+            div:nth-child(odd) {
+                background-color: teal;
+            }
+            div:first-child {
+                background-color: tomato;
+            }
+
             
             span {
                display: block;
                 margin: 5px 5px;
                 border-style: dotted;
                 background-color: lightcoral;
+                color: lightcoral;
+                padding: 5px;
+                border-radius: 10px;
             }
+            span:nth-child(2n){
+                background-color: teal;
+            p span {
+                color: white;
+            }
+            div > span {
+                text-decoration: underline;
+            }
+            p + span {
+                color: blue;
+            }
+            p ~ address {
+                color: red;
+            }
+
 
             #tomato, #tomato2 {
                 background-color: tomato;
             }
-
             .btn {
                 padding: 5px 10px;
                 border-radius: 5px;
             }
-
             .teal {
                 background-color: teal;
                 color: white;
             }
-
             .another {
                 background-color: slateblue;
-            }
-            */
-            body {
-                height: 1000vh;
-                margin: 20px;
-                /*
-                display: flex;
-                justify-content: space-evenly;
-                align-items: center;
-                flex-wrap: wrap;
-                flex-direction: column;*/
-            }
-            
-            div {
-                /*display: flex;
-                justify-content: center;
-                align-items: center;
-                font-size: 20px;
-                display: inline-block;*/
-                width: 100px;
+            }  
+            .green {
+                background-color: teal;
                 height: 100px;
-                color: white;
+                width: 100px;
+                position: absolute; 
+                right: 0;
+                bottom: 0;
             }
+    
+
             #green {
                 position: fixed;
                 background-color: teal;
@@ -118,17 +145,108 @@
             #different {
                 background-color: wheat;
             }
-            /*
             #second {
                 background-color: wheat;
             }
+            
+
+            input {
+                border: 2px solid gray;
+            }
+            input:required {
+                border-color: slateblue;
+            }
+            input[type="password"] {
+                background-color: gray;
+            }
+            input[placeholder*="name"] {
+                background-color: red;
+            }
+            input[placeholder~="name"] {
+                background-color: pink;
+            }
+            
+
+            button:hover {
+                background-color: blue;
+            }
+            button:active {
+                background-color: teal;
+            }
+            input:focus {
+                background-color: tomato;
+            }
+            a:visited {
+                color: red;
+            }
+            a:hover {
+                color: teal;
+            }
+            a:focus {
+                color: turquoise;
+            }
             */
+
+            form {
+                border: 2px solid salmon;
+                display: flex;
+                flex-direction: column;
+                padding: 20px;
+            }
+            form:focus-within {
+                border-color: seagreen;
+            }
+            form:hover input:focus{
+                background-color: saddlebrown;
+            }
+
         </style>
     </head>
     <body>
+        <form>
+            <input type="text" name="" id="">
+            <input type="text" name="" id="">
+            <input type="text" name="" id="">
+        </form>
+
+        <!--
+        <button>Hello</button>
+        <input type="text">
+        <input type="text">
+        <a href="https://apple.com">Go to apple</a>
+
+        <form>
+            <input type="text" placeholder="Firstname">
+            <input type="text" placeholder="Last name">
+            <input type="password" required placeholder="password">
+        </form>
+        
+        <div>
+            <span>hello</span>
+            <p>
+                HTML (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning and structure of web content. <span>inside</span>
+            </p>
+            <span>hello</span>
+            <address>hello</address>
+        </div>
+
+
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+        <span>hello</span>
+        <span>hello</span>
+        <span>hello</span>
+        <span>hello</span>
+        <span>hello</span>
+        
+        <div>
+            <div class="green"></div>
+        </div>
         <div id="green"></div>
         <div id="different"></div>
-        <!--
         <div id="second"></div>
         <div></div>
         

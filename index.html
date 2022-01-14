@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Kokoa Talk</title>
+    <title>Welcome to Kokoa Clone</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
-    <div id="status-bar">
+    <div class="status-bar">
       <div class="status-bar__column">
         <span>No Service</span>
         <!-- To Do : Wifi Icon -->
@@ -20,12 +21,25 @@
       <div class="status-bar__column">
         <span>21%</span>
         <!-- Battery Icon -->
-        <i class="fas fa-battery-quarter"></i>
+        <i class="fas fa-battery-quarter fa-lg"></i>
         <!-- Lightning Icon -->
         <i class="fas fa-bolt"></i>
-
       </div>
     </div>
+
+    <header class="welcome-header">
+      <h1 class="welcome-header__title">Welcome to KokoaTalk</h1>
+      <p class="welcome-header__text">If tou have a Kokoa Account, log in with your email or phone number.</p>
+    </header>
+
+    <!-- form 을 또 사용하지 않거나, 거의 없을 것. class 대신 id 사용한다.(필수 X) -->
+    <form id="login-form">
+      <input type="text" placeholder="Email or phone number">
+      <input type="password" placeholder="Password">
+      <input type="submit" value="Log In">
+      <a href="#">Find Kokoa Account or Pssword</a>
+    </form>
+
     <script src="https://kit.fontawesome.com/6478f529f2.js"
     crossorigin="anonymous"
     ></script>

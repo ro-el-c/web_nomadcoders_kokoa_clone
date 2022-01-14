@@ -1,6 +1,10 @@
 # 텍스트 파일 무시
 *.txt
 
+# 클론코딩할 것들 이미지 파일 다운 폴더
+/screenshots
+
+
 # Created by https://www.toptal.com/developers/gitignore/api/windows,visualstudiocode
 # Edit at https://www.toptal.com/developers/gitignore?templates=windows,visualstudiocode
 

@@ -1,0 +1,39 @@
+.nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f9f9fa;
+  padding: 20px 0px;
+  border-top: 1px solid #e2e2e2;
+}
+.nav__list {
+  display: flex;
+  justify-content: space-around;
+}
+.nav__link {
+  color: #2e363e;
+  /* position: absolute는 가장 가까운 position: relative 부모를 기준으로 하기 때문에, 메세지에 배지(새로운 메세지 수)를 위해 position: relative를 link에 적는다. */
+  position: relative;
+}
+.nav__notification {
+  background-color: tomato;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  /* span은 inline이므로 width, height 적용 X 따라서 display를 box로 설정 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  position: absolute;
+  left: 13px;
+  bottom: 10.5px;
+}
+.nav__notification--dot {
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  left: 23px;
+  bottom: 20px;
+}

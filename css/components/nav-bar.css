@@ -11,7 +11,6 @@
   justify-content: space-around;
 }
 .nav__link {
-  color: #2e363e;
   /* position: absolute는 가장 가까운 position: relative 부모를 기준으로 하기 때문에, 메세지에 배지(새로운 메세지 수)를 위해 position: relative를 link에 적는다. */
   position: relative;
 }

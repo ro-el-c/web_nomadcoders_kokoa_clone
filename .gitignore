@@ -4,6 +4,9 @@
 # 클론코딩할 것들 이미지 파일 다운 폴더
 /screenshots
 
+# 첨부 이미지 파일
+/image
+
 
 # Created by https://www.toptal.com/developers/gitignore/api/windows,visualstudiocode
 # Edit at https://www.toptal.com/developers/gitignore?templates=windows,visualstudiocode

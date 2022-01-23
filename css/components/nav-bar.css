@@ -15,19 +15,9 @@
   position: relative;
 }
 .nav__notification {
-  background-color: tomato;
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  /* span은 inline이므로 width, height 적용 X 따라서 display를 box로 설정 */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-weight: 600;
   position: absolute;
-  left: 13px;
-  bottom: 10.5px;
+  left: 12.5px;
+  bottom: 10px;
 }
 .nav__notification--dot {
   width: 5px;

@@ -1,0 +1,12 @@
+.badge {
+  background-color: tomato;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  /* span은 inline이므로 width, height 적용 X 따라서 display를 box로 설정 -> flex */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  color: white;
+}

@@ -129,7 +129,7 @@
   bottom: 0;
   width: 100%;
   background-color: white;
-  padding: 8px 15px;
+  padding: 8px 10px;
   box-sizing: border-box;
 
   display: flex;
@@ -194,9 +194,9 @@
 .reply:focus-within button {
   opacity: 0;
 }
-.reply:focus-within input {
+.reply input:focus {
   width: 98vw;
-  transform: translateX(-6.7%) translateY(-50px);
+  transform: translateX(-5.8%) translateY(-50px);
 }
 .reply:focus-within {
   transform: translateY(50px);

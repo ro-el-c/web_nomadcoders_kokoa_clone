@@ -24,3 +24,15 @@
   right: -6px;
   bottom: 20px;
 }
+
+@keyframes rotateCogAnimation {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateZ(180deg);
+  }
+}
+.screen-header__icons .fa-cog:hover {
+  animation: rotateCogAnimation 1.5s linear infinite;
+}

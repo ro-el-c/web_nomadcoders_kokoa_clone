@@ -1,5 +1,6 @@
 .user-component {
   justify-content: space-between;
+  margin-bottom: 25px;
 }
 
 .user-component,
@@ -38,13 +39,36 @@
   font-weight: 400;
 }
 
+.user-component__sub {
+  display: flex;
+  align-items: flex-end;
+}
+
 .user-component__subtitle {
   margin-top: 9px;
-  color: rgba(0, 0, 0, 0.4);
+  color: var(--gray-color);
   font-size: 15px;
 }
 
 .user-component__time {
   display: block;
   margin-bottom: 10px;
+}
+.user-component__thumbtack {
+  margin-left: 3px;
+  color: rgba(0, 0, 0, 0.2);
+}
+.user-component_subtitle-mark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-left: 8px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid rgb(255, 83, 83);
+  color: rgb(255, 83, 83);
+  font-size: 11px;
+  font-weight: 600;
 }

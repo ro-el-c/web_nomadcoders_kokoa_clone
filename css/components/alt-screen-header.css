@@ -1,0 +1,33 @@
+.alt-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 43px var(--horizontal-space) var(--horizontal-space);
+}
+.alt-header__title {
+  font-size: 23px;
+  font-weight: 600;
+}
+
+.alt-header__column {
+  width: 33%;
+}
+
+.alt-header__column:first-child {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.alt-header__column:nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+.alt-header__column:last-child {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.alt-header__icon--two {
+  margin-left: 20px;
+}

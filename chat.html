@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Kokoa Talk - Kokoa Clone</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body id="chat-screen">
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <!-- To Do : Wifi Icon -->
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>21%</span>
+        <!-- Battery Icon -->
+        <i class="fas fa-battery-quarter fa-lg"></i>
+        <!-- Lightning Icon -->
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+
+    <header class="alt-header">
+      <div class="alt-header__column">
+        <a href="chats.html"><i class="fas fa-angle-left fa-2x"></i></i></a>
+      </div>
+      <div class="alt-header__column">
+        <span class="alt-header__title">Kokoa Talk</span>
+      </div>
+      <div class="alt-header__column">
+        <i class="fas fa-search fa-lg"></i>
+        <i class="fas fa-bars fa-lg alt-header__icon--two"></i>
+      </div>
+    </header>
+    
+    <main class="main-screen main-chat">
+      <div class="chat__timestamp">
+        Monday, January 1, 2022
+      </div>
+
+      <div class="message-row">
+        <img src="image/kakao_talk_symbol.png">
+        <div class="message-row__content">
+          <span class="message__author">Kokoa Talk</span>
+          <div class="message__info">
+            <span class="message__bubble">Hi!</span>
+            <span class="message__time">21:13</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="message-row message-row--own">
+        <div class="message-row__content">
+          <div class="message__info">
+            <span class="message__bubble">Hi, there! Nice to meet u.</span>
+            <span class="message__time">21:15</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="message-row">
+        <img src="image/kakao_talk_symbol.png">
+        <div class="message-row__content">
+          <span class="message__author">Kokoa Talk</span>
+          <div class="message__info">
+            <span class="message__bubble">Welcome to Kokoa Talk.</span>
+          </div>
+          <div class="message__info message__info--not-first">
+            <span class="message__bubble">Do you need some help?</span>
+            <span class="message__time">21:16</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="message-row message-row--own">
+        <div class="message-row__content">
+          <div class="message__info">
+            <span class="message__bubble">Oh, I'm okay.</span>
+            <span class="message__time">21:17</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <form class="reply">
+      <div class="reply__column">
+        <i class="far fa-plus-square fa-lg"></i>
+      </div>
+      <div class="reply__column">
+        <input type="text" placeholder="Write message..">
+        <i class="far fa-smile-wink"></i>
+        <button>
+          <i class="fas fa-arrow-up"></i>
+        </button>
+      </div>
+    </form>
+
+    <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
+  </body>
+</html>
